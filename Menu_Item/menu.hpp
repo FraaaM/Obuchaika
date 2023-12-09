@@ -1,14 +1,14 @@
-﻿// структура меню
-#pragma once
+﻿#pragma once
 
 namespace MCherevko {
-	struct MenuItem {
-		const char* const title;
-		void (*func)(const MenuItem* current); // передаём текущий элемент меню	
-		// масив указателей
-		const MenuItem* const* children; //??
+    struct MenuItem {
+        const char* const title;
+        const MenuItem* (*func)(const MenuItem* current);
 
-		const int children_count;
+        const MenuItem* parent;
+
+        const MenuItem* const* children;
+        const int children_count;
 	
-	};
+    };
 }
