@@ -22,31 +22,57 @@ const MCherevko::MenuItem* MCherevko::exit(const MenuItem* current) {
     std::exit(0);
 }
 
-const MCherevko::MenuItem* MCherevko::study_summ(const MenuItem* current) {
-    // TODO
-    std::cout << current->title << std::endl << std::endl;
-    return current->parent;
-}
-
-const MCherevko::MenuItem* MCherevko::study_substract(const MenuItem* current) {
-    // TODO
-    std::cout << current->title << std::endl << std::endl;
-    return current->parent;
-}
-
-const MCherevko::MenuItem* MCherevko::study_multiply(const MenuItem* current) {
-    // TODO
-    std::cout << current->title << std::endl << std::endl;
-    return current->parent;
-}
-
-const MCherevko::MenuItem* MCherevko::study_divide(const MenuItem* current) {
-    // TODO
-    std::cout << current->title << std::endl << std::endl;
-    return current->parent;
-}
-
 const MCherevko::MenuItem* MCherevko::study_go_back(const MenuItem* current) {
+    // TODO
+    std::cout << current->title << std::endl << std::endl;
+    return current->parent->parent;
+}
+
+
+const MCherevko::MenuItem* MCherevko::algebra_summ(const MenuItem* current) {
+    // TODO
+    std::cout << current->title << std::endl << std::endl;
+    return current->parent;
+}
+
+const MCherevko::MenuItem* MCherevko::algebra_substract(const MenuItem* current) {
+    // TODO
+    std::cout << current->title << std::endl << std::endl;
+    return current->parent;
+}
+
+const MCherevko::MenuItem* MCherevko::algebra_multiply(const MenuItem* current) {
+    // TODO
+    std::cout << current->title << std::endl << std::endl;
+    return current->parent;
+}
+
+const MCherevko::MenuItem* MCherevko::algebra_divide(const MenuItem* current) {
+    // TODO
+    std::cout << current->title << std::endl << std::endl;
+    return current->parent;
+}
+
+const MCherevko::MenuItem* MCherevko::algebra_go_back(const MenuItem* current) {
+    // TODO
+    std::cout << current->title << std::endl << std::endl;
+    return current->parent->parent;
+}
+
+
+const MCherevko::MenuItem* MCherevko::matan_diff(const MenuItem* current) {
+    // TODO
+    std::cout << current->title << std::endl << std::endl;
+    return current->parent;
+}
+
+const MCherevko::MenuItem* MCherevko::matan_integr(const MenuItem* current) {
+    // TODO
+    std::cout << current->title << std::endl << std::endl;
+    return current->parent;
+}
+
+const MCherevko::MenuItem* MCherevko::matan_go_back(const MenuItem* current) {
     // TODO
     std::cout << current->title << std::endl << std::endl;
     return current->parent->parent;
